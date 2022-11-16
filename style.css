@@ -1,0 +1,211 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    margin: 0;
+    box-sizing: border-box;
+    font-weight: 500;
+    color: white;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    min-height: 1010.34px;
+}
+
+html, body, main, .left, .right, .top, .bottom {
+    display: flex;
+}
+
+body {
+    background-image: url("./images/bg-intro-mobile.png");
+    background-color: hsl(0, 100%, 74%);
+    padding: 10% 7%;
+}
+
+body, .top {
+    justify-content: center;
+    align-items: center;
+}
+
+main, .left, .right, .bottom {
+    flex-direction: column;
+}
+
+main {
+    width: 337.5px;
+}
+
+h1 {
+    margin-bottom: 7%;
+    font-size: 1.8rem;
+}
+
+.left {
+    margin-bottom: 15%;
+}
+
+h1, .span, .span-term {
+    font-weight: 700;
+}
+
+p {
+    line-height: 1.2rem;
+}
+
+p, .top p, .terms {
+    font-weight: 400;
+}
+
+h1, p {
+    text-align: center;
+}
+
+.top {
+    padding: 5% 15%;
+    background-color: hsl(248, 32%, 49%);
+    box-shadow: 0 10px 0px hsl(0, 63%, 64%);
+}
+
+.top p, .left p{
+    line-height: 1.5rem;
+}
+
+.bottom {
+    background-color: white;
+    padding: 7%;
+}
+
+input {
+    border: 1px solid hsl(246, 25%, 77%);
+    font-weight: 600;
+    font-size: 1rem;
+    color: hsl(249, 10%, 26%) ;
+}
+
+button {
+    background-color: hsl(154, 59%, 51%);
+    border: 0;
+    letter-spacing: 0.1rem;
+}
+
+button:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+input, button {
+    padding: 5%;
+}
+
+.one, .two, .three, .four, .top {
+    margin-bottom: 15%;
+}
+
+.five {
+    margin-bottom: 3%;
+}
+
+input, button {
+    width: 100%;
+}
+
+input, button, .top, .bottom {
+    border-radius: 0.5rem;
+}
+
+.terms p {
+    color: hsl(246, 25%, 77%);
+    font-size: 0.7rem;
+}
+
+.span-term {
+    color:hsl(0, 100%, 74%);
+    font-size: 0.7rem;
+}
+
+#para, #falsepara, #para1, #falsepara1, #para2, #falsepara2, #para3, #falsepara3 {
+    padding-left: 5%;
+    margin-top: 1%;
+    font-size: 0.7rem;
+    text-align: left;
+    font-style: italic;
+    position: absolute;
+    line-height: normal;
+}
+
+#falseimg, #falseimg1, #falseimg2, #falseimg3 {
+    position: absolute;
+    left: 82%;
+    top:35%;
+    width: 1rem;
+}
+
+.one, .two, .three, .four {
+    position: relative;
+}
+
+@media (min-width:750px) {
+
+    body {
+        padding: 5% 10%;
+    }
+
+    main {
+        width: 1152px;
+        flex-direction: row;
+    }
+
+    .right, .left {
+        flex-basis: 50%;
+    }
+
+    
+    html, body {
+        min-height: 789.34px;
+        min-width: 1440px;
+    }
+
+    .one, .two, .three, .four {
+        margin-bottom: 7%;
+    }
+
+    .top {
+        margin-bottom: 5%;
+    }
+
+    input, button {
+        padding: 3%;
+    }
+
+    #para, #falsepara, #para1, #falsepara1, #para2, #falsepara2, #para3, #falsepara3 {
+      text-align: right;
+      width: 100%;
+    }
+
+    #falseimg, #falseimg1, #falseimg2, #falseimg3 {
+        left: 90%;
+        top:30%;
+        width: 1.5rem;
+    }
+
+    .left {
+        margin: 0;
+        padding: 5% 5% 5% 0;
+        align-items: center;
+        justify-content: center;
+    }
+
+    h1 {
+        font-size: 3rem;
+        line-height: 3.2rem;
+    }
+
+    h1, .left p {
+        text-align: left;
+    }
+
+    .left p {
+        font-weight: 400;
+    }
+}
